@@ -2,8 +2,7 @@ let player = { x: 200, y: 200, size: 20 };
 let enemies = [];
 let score = 0;
 let startButton;
-let gameState = "START"
-let gameOver = false;
+let gameState = "START";
 
 
 function setup() {
