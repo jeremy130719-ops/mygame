@@ -24,8 +24,8 @@ function initEnemies() {
     enemies.push({
       x: random(400),
       y: random(400),
-      speedX: random(10, 10),
-      speedY: random(10, 10)
+      speedX: random(2, 2),
+      speedY: random(2, 2)
     });
   }
 }
