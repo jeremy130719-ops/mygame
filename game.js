@@ -17,7 +17,7 @@ function setup() {
 function initEnemies() {
   enemies = [];
   // 创建多个敌人
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     enemies.push({
       x: random(400),
       y: random(400),
