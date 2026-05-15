@@ -2,8 +2,8 @@ let player = { x: 200, y: 200, size: 20 };
 let enemies = [];
 let score = 0;
 let startButton;
-let gameState = "START";
-
+let gameState = "START"
+let gameOver = false;
 
 function setup() {
   createCanvas(400, 400);
@@ -33,21 +33,20 @@ function startGame(){
   score = 0;
   player.x = 200;
   player.y = 200;
-  initEnemies();
+  intiEnemies();
 }
 
 
-function draw() ;
+function draw() {
   background(30);
 
   if (gameState === "START"){
     fill(255);
-    textAlign(CENTER);\
+    textAlign(CENTER);
     textSize(30);
-    text("Dodge game" , width/2, 120);
+    text("Dodge game", width / 2, 120);
 
     return;
-    
     
   }
 
@@ -81,7 +80,7 @@ function draw() ;
     let d = dist(player.x, player.y, e.x, e.y);
     if (d < 20) {
       gameState = "GAMEOVER";
-      alert("💥 Game over! Your score is：" + score);
+      alert("💥 Game over! Your score is: " + score);
 
       startButton.show ();
       gameState = "START"
